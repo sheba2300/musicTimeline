@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <style>
+  img
+  {
+    position:absolute;
+    left:0px;
+    top:0px;
+
+
+  }
+  </style>
+<script>
+function initialize()
+{
+	characters = ["walker1.png", "walker2.png", "walker3.png", "walker4.png", "walker5.png", "walker6.png", "walker7.png", "walker8.png", "walker9.png", "walker10.png"];
+	walker = document.getElementById("walkerId");
+  idx = 0;
+  xPosition = 0;
+  yPosition = 0;
+
+}
+function moveLeft()
+{
+	walker.src = "moves/" + characters[idx];
+  xPosition = xPosition - 10;
+	walker.style.left = xPosition + "px";
+  walker.style.transform = "scaleX(-1)";
+  if(idx >= characters.length-2)
+  {
+    idx = 0;
+  }
+  else
+  {
+    idx++;
+  }
+}
+function moveRight()
+{
+	walker.src = "moves/" + characters[idx];
+  xPosition = xPosition + 10;
+	walker.style.left = xPosition + "px";
+  walker.style.transform = "scaleX(1)";
+  if(idx >= characters.length-2)
+  {
+    idx = 0;
+  }
+  else
+  {
+    idx++;
+  }
+}
+function moveUp()
+{
+	walker.src = "moves/" + characters[idx];
+  yPosition = yPosition - 10;
+	walker.style.top = yPosition + "px";
+  if(idx >= characters.length-2)
+  {
+    idx = 0;
+  }
+  else
+  {
+    idx++;
+  }
+}
+function moveDown()
+{
+	walker.src = "moves/" + characters[idx];
+  yPosition = yPosition + 10;
+	walker.style.top = yPosition + "px";
+  if(idx >= characters.length-2)
+  {
+    idx = 0;
+  }
+  else
+  {
+    idx++;
+  }
+}
+function findKey()
+{
+  letter = event.key;
+  if (letter=="w" || letter == "W")
+   {
+    moveUp();
+  }
+
+  if (letter=="s" || letter == "S")
+   {
+     moveDown();
+
+  }
+
+  if (letter=="a" || letter == "A")
+   {
+     moveLeft();
+
+  }
+
+  if (letter=="d" || letter == "D")
+   {
+     moveRight();
+
+  }
+}
+
+
+</script>
+
+
+</head>
+
+<body onload="initialize();"onkeypress="findKey(event);">
+<img id = "walkerId" src = "moves/walker1.png"/>
+
+</body>
+</html>
+

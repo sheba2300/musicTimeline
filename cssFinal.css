@@ -1,0 +1,280 @@
+#walkerId
+{
+  position:absolute;
+  left:0%;
+  top:70%;
+  transform: scale(.5,.5);
+}
+
+body
+{
+}
+.dates
+{
+  color:white;
+  font-size: 50px;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+.title
+{
+  text-align: center;
+  font-family:fantasy;
+  font-weight:bold;
+  font-size:60px;
+}
+#indexTitle
+{
+  color:rgb(239, 17, 128);
+  font-size:70px;
+  text-align:left;
+  font-family: 'Playfair Display', serif;
+}
+#ring1
+{
+  position: absolute;
+  top:31%;
+  left:10%;
+  width:15%;
+}
+#ring2
+{
+  position: absolute;
+  top:66%;
+  left:25%;
+  width:15%;
+}
+#ring3
+{
+  position: absolute;
+  top:25%;
+  left:40%;
+  width:15%;
+}
+#ring4
+{
+  position: absolute;
+  top:65%;
+  left:60%;
+  width:15%;
+}
+#ring5
+{
+  position: absolute;
+  top:3%;
+  left:67%;
+  width:15%;
+}
+#ring6
+{
+  position: absolute;
+  top:37%;
+  left:82%;
+  width:15%;
+}
+#parent
+{
+  background-color: red;
+}
+div>#dates
+{
+
+  position:relative;
+
+}
+#sixties
+{
+
+  top:40%;
+  left:13%;
+
+
+}
+#seventies
+{
+	top:75%;
+  left:28%;
+}
+#eighties
+{
+  top:35%;
+  left:43%;
+
+
+}
+#nineties
+{
+top:75%;
+left:62%;
+
+}
+#twoThou
+{
+  top:10%;
+  left:69%;
+
+}
+#present
+{
+  top:43%;
+  left:85%;
+}
+.background
+{
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  z-index:-1;
+
+}
+.listTitle
+{
+  display:inline;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border:solid;
+  border-radius:5px;
+  background-color: rgb(148, 148, 184);
+  text-shadow: 3px 3px grey;
+  font-size: 40px;
+  margin-right: 50px;
+}
+.genres
+{
+  display: none;
+  border:solid;
+  border-radius:5px;
+  background-color: rgb(148, 148, 184);
+  text-shadow: 3px 3px grey;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+.titleDiv
+{
+  text-align: center;
+    margin-bottom: 40px;
+}
+.titleDiv>span:hover
+{
+
+    display: inline-block;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+.hitsId>span:hover
+{
+  display: inline-block;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.hitsId
+{
+	text-align:center;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#artistId
+{
+
+  display: none;
+  position:absolute;
+  left:30%;
+}
+.artist
+{
+  font-size:30px;
+  font-weight:bold;
+
+
+}
+.playlist
+{
+  position: fixed;
+  left:50%;
+  font-size:30px;
+}
+#songList
+{
+  font-weight: bold;
+  width:400px;
+}
+.back
+{
+  font-size: 20px;
+  border:solid;
+  border-radius:5px;
+  background-color: rgb(148, 148, 184);
+  text-shadow: 3px 3px grey;
+  position:fixed;
+  top:90%;
+}
+#backToMenu
+{
+  left:5%;
+}
+#backToDecades
+{
+  left:90%;
+
+}
+
+.hitsPlaylist
+{
+
+
+}
+#list
+{
+  position:absolute;
+  left:25%;
+  top:40%;
+  font-size:30px;
+  font-weight:bold;
+  text-align:left;
+  border:solid;
+  box-sizing: border-box;
+  width: 50%;
+  border-radius:5px;
+  background-color: rgb(148, 148, 184);
+  opacity: 0.8;
+  text-shadow: 3px 3px grey;
+  list-style-type: none;
+}
+#artistId
+{
+  position:absolute;
+  left:15%;
+  top:35%;
+  font-size:30px;
+  font-weight:bold;
+  text-align:left;
+  border:solid;
+  box-sizing: border-box;
+  width: 70%;
+  height:75%;
+  border-radius:5px;
+  background-color: rgb(148, 148, 184);
+  opacity: 0.8;
+  text-shadow: 3px 3px grey;
+  list-style-type: none;
+}

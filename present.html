@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="cssFinal.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="musicLists.js"></script>
+	 <script src="createWeb.js"></script>
+<title>Title of the document</title>
+
+</head>
+<body onload="initialize(5);">
+  <h1 class="title"> Now</h1>
+  <img class = "background"src="backgrounds/present.jpg"/>
+  <div class = "titleDiv">
+      <span onclick="showLeg(); hideGreat();" class = "listTitle" id = "legends">Legends of the time</span>
+      <span onclick="showGreat(); hideLeg();" class = "listTitle" id = "greatest">Greatest Hits</span>
+  </div>
+  <span onclick="back();" class = "back" id="backToMenu">Back</span>
+  <a href = "index.html" class = "back"  id="backToDecades"style = "Text-decoration: none;"> Back to Decades</a>
+  <div class = "hitsId">
+    <span onclick="generatePopPlaylist(6);" class = "genres"id="popId">Pop</span>
+    <span onclick="generateSoulPlaylist(5)" class = "genres"id="SoulId">RandB/Hip Hop</span>
+    <span onclick="generateRockPlaylist(5);" class = "genres"id="rockId">Rock</span>
+  </div>
+
+  <div id="list">
+  <div class = "hitsPlaylist" id = "popPlaylist"></div>
+   <div class = "hitsPlaylist" id = "soulPlaylist"></div>
+   <div class = "hitsPlaylist" id = "rockPlaylist"></div>
+ </div>
+ <div id = "artistId">
+   <span onclick="showSongs(0);"class="artist"id="artist0"> </span> <span class = "playlist"id = "songList"></span>
+   <div id="space"></div>
+     <span onclick="showSongs(1);"class="artist"id="artist1"> </span>
+     <div id="space"> </div>
+<span onclick="showSongs(2);"class="artist"id="artist2"> </span>
+<div id="space"></div>
+<span onclick="showSongs(3);"class="artist"id="artist3"> </span>
+<div id="space"></div>
+<span onclick="showSongs(4);"class="artist"id="artist4"> </span>
+<div id="space"></div>
+<span onclick="showSongs(5);"class="artist"id="artist5"> </span>
+<div id="space"></div>
+<span onclick="showSongs(6);"class="artist"id="artist6"> </span>
+<div id="space"></div>
+<span onclick="showSongs(7);"class="artist"id="artist7"> </span>
+<div id="space"></div>
+<span onclick="showSongs(8);"class="artist"id="artist8"> </span>
+<div id="space"></div>
+<span onclick="showSongs(9);"class="artist"id="artist9"> </span>
+<div id="space"></div>
+<span onclick="showSongs(10);"class="artist"id="artist10"> </span>
+<div id="space"></div>
+<span onclick="showSongs(11);"class="artist"id="artist11"> </span>
+<div id="space"></div>
+<span onclick="showSongs(12);"class="artist"id="artist12"> </span>
+<div id="space"></div>
+<span onclick="showSongs(13);"class="artist"id="artist13"> </span>
+<div id="space"></div>
+<span onclick="showSongs(14);"class="artist"id="artist14"> </span>
+<div id="space"></div>
+<span onclick="showSongs(15);"class="artist"id="artist15"> </span>
+<div id="space"></div>
+<span onclick="showSongs(16);"class="artist"id="artist16"> </span>
+</div>
+
+
+
+</body>
+</html>

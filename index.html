@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="cssFinal.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="musicLists.js"></script>
+    <script src="createWeb.js"></script>
+
+    <script>
+      function initialize()
+      {
+        xPosition=0;
+        yPosition=0;
+        decadesNum = 6;
+        legends = iconicArtist.split(";");
+        characters = ["walker1.png", "walker2.png", "walker3.png", "walker4.png", "walker5.png", "walker6.png", "walker7.png", "walker8.png", "walker9.png", "walker10.png"];
+      	walker = document.getElementById("walkerId");
+        idx = 0;
+        xPosition = 0;
+        yPosition = 70;
+      }
+    </script>
+  </head>
+<body onload="initialize();" onkeypress="findKey(event);">
+<span id = "indexTitle"class="title" style="display:inline-block;
+text-indent:50px;"> MUSIC </span> <br />
+  <span id = "indexTitle"class="title">TIMELINE</span>
+<div>
+
+		<img id="ring1" src="backgrounds/ring.png"/>
+    <img id="ring2" src="backgrounds/ring2.png"/>
+    <img id="ring3" src="backgrounds/ring3.png"/>
+    <img id="ring4" src="backgrounds/ring4.png"/>
+    <img id="ring5" src="backgrounds/ring5.png"/>
+    <img id="ring6" src="backgrounds/ring6.png"/>
+
+
+
+		<span class = "dates" id="sixties">1960s</span>
+		<span class = "dates" id="seventies">1970s</span>
+		<span class = "dates" id="eighties">1980s</span>
+		<span class = "dates" id="nineties">1990s</span>
+		<span class = "dates" id="twoThou">2000s</span>
+		<span class = "dates" id="present">Now</span>
+
+
+</div>
+<img class = "background"src = "backgrounds/background.jpg"/>
+<img id = "walkerId" src = "moves/walker1.png"/>
+</body>
+
+</html>
